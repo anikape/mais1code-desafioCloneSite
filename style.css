@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+}
+
+
+header {
+  background-color: #6533E2;
+  align-items: center;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 5px;
+  color: black;
+
+}
+
+
+
+.logo {
+  width: 100px;
+  padding: 5px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+.link {
+  list-style-type: none;
+  padding: 5px;
+
+}
+
+header a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.input1 {
+
+  height: 20px;
+  width: 80px;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #6533E2;
+  outline: none;
+  padding: 10px 14px 12px;
+
+}
+
+input::placeholder {
+  font-size: 10px;
+}
+
+/*Main*/
+
+.banner {
+  background-color: #6533E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  height: 250px;
+
+}
+
+.text {
+
+  padding-top: 50px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  height: 267px;
+  width: 329px;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 1;
+  font-size: 20px;
+
+}
+
+.paragraph {
+  display: flex;
+  width: 220px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  margin: 0 0 14.4px;
+}
+
+
+.reprogramando {
+  width: 192px;
+  height: 208px;
+  padding-bottom: 2px;
+
+}
+
+.entenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.entenda h2 {
+  color: #6533E2;
+  font-family: "Lato Bold", Sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+/*Cards*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+}
+
+
+#card {
+  width: 77%;
+
+}
+
+.buttons {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+
+}
+
+button {
+
+  display: inline-flex;
+  font-family: "Lato", Sans-serif;
+  font-size: 10px;
+  background-color: #6533E2;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  padding: 5px;
+  color: #FFFFFF;
+  width: 100px;
+  justify-content: center;
+}
+
+.vidas_reprogramadas img {
+  width: 100%;
+}
+
+.patrocinadores{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.patrocinadores h2{
+  color: #6533E2;
+  font-family: "Lato Bold", Sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  padding: 20px;
+}
+
+.patrocinadores ul{
+  display: flex;
+  justify-content: center;
+}
+
+.patrocinadores ul li{
+  list-style: none;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.patrocinadores img{
+  width: 40px;
+}
