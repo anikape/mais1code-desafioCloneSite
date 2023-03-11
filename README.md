@@ -6,7 +6,11 @@
 
 - Foi escolhido para desenvolvimento  da proposta o site da Mais1Code
 
-Confira o  site original no link: <a href="https://mais1code.com.br/" target="_blanck">Mais1Code</a>
+Confira o site original no link: <a href="https://mais1code.com.br/" target="_blank">Mais1Code</a>
+
+## Acompanhe o resultado do projeto pelo link:
+
+<a href="https://sprightly-valkyrie-8bce5a.netlify.app/" target="_blank">Clone do Site Mais1Code</a>
 
 Autora: @Anikape
  
