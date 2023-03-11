@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 5px;
+  padding: 30px;
   color: black;
 
 }
@@ -29,7 +29,7 @@ header {
 
 
 .logo {
-  width: 100px;
+  width: 200px;
   padding: 5px;
 }
 
@@ -37,25 +37,42 @@ header nav ul {
   display: flex;
 }
 
+
+
 .link {
   list-style-type: none;
-  padding: 5px;
+  padding: 10px;
+  justify-content: space-between;
 
 }
 
 header a {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 12px;
+  font-family: "Lato", Sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+
+}
+
+#first {
+  color: #C36;
+}
+
+header nav ul li a:hover {
+  color: #C36;
+  cursor: pointer;
 }
 
 .input1 {
 
-  height: 20px;
-  width: 80px;
+  height: 40px;
+  width: 200px;
+  background-image: url("./assets/lupa.png");
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   border: 1px solid white;
-  border-radius: 8px;
+  border-radius: 50px;
   background-color: #6533E2;
   outline: none;
   padding: 10px 14px 12px;
@@ -63,7 +80,8 @@ header a {
 }
 
 input::placeholder {
-  font-size: 10px;
+  font-size: 15px;
+  padding-left: 50px;
 }
 
 /*Main*/
@@ -73,9 +91,8 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   padding-top: 30px;
-  height: 250px;
+  height: 450px;
 
 }
 
@@ -84,28 +101,31 @@ input::placeholder {
   padding-top: 50px;
   padding-left: 20px;
   margin-bottom: 25px;
-  height: 267px;
-  width: 329px;
+  justify-content: center;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
   line-height: 1;
-  font-size: 20px;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
 
 }
 
+
 .paragraph {
   display: flex;
-  width: 220px;
+  width: 590px;
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 27px;
   font-family: 'Lato', sans-serif;
   margin: 0 0 14.4px;
+  line-height: 1.5em;
 }
 
 
 .reprogramando {
-  width: 192px;
-  height: 208px;
+  width: 392px;
+  height: 408px;
   padding-bottom: 2px;
 
 }
@@ -121,9 +141,11 @@ input::placeholder {
 .entenda h2 {
   color: #6533E2;
   font-family: "Lato Bold", Sans-serif;
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 400;
   letter-spacing: -0.8px;
+  padding-top: 50px;
+  ;
 }
 
 /*Cards*/
@@ -143,7 +165,7 @@ input::placeholder {
 
 
 #card {
-  width: 77%;
+  width: 67%;
 
 }
 
@@ -153,6 +175,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
+  padding-left: 50px;
 
 }
 
@@ -160,49 +183,56 @@ button {
 
   display: inline-flex;
   font-family: "Lato", Sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   background-color: #6533E2;
   border-radius: 12px 12px 12px 12px;
   border: none;
   padding: 5px;
   color: #FFFFFF;
-  width: 100px;
+  width: 150px;
   justify-content: center;
+}
+
+.button_one {
+  margin-left: 100px;
+
 }
 
 .vidas_reprogramadas img {
   width: 100%;
 }
 
-.patrocinadores{
+.patrocinadores {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding: 50px;
+  gap: 100px;
+
 }
 
-.patrocinadores h2{
+.patrocinadores h2 {
   color: #6533E2;
   font-family: "Lato Bold", Sans-serif;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: 800;
   letter-spacing: -0.8px;
   padding: 20px;
 }
 
-.patrocinadores ul{
+.patrocinadores ul {
   display: flex;
   justify-content: center;
 }
 
-.patrocinadores ul li{
+.patrocinadores ul li {
   list-style: none;
   justify-content: space-around;
   padding: 15px;
 }
 
-.patrocinadores img{
-  width: 40px;
+.patrocinadores img {
+  width: 100px;
 }
