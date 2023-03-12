@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  text-decoration: none;
 
 }
 
@@ -235,4 +236,146 @@ button {
 
 .patrocinadores img {
   width: 100px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #6533E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer_container img {
+  margin-top: 10%;
+  width: 150px;
+  height: 100px;
+}
+
+.footer_one {
+  display: flex;
+  color: #FFFFFF;
+  margin: 4rem;
+  gap: 4rem;
+  padding: 4rem;
+}
+
+
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: "Lato", Sans-serif;
+  line-height: 2rem;
+}
+
+.contatos h2 {
+  margin-bottom: 0.5rem;
+}
+
+
+.institucional {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", Sans-serif;
+  line-height: 2rem;
+  font-size: 15px;
+
+}
+
+.institucional a:visited {
+  color: #FFFFFF;
+}
+
+.institucional h2 {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container_titulo {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.sociais {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+.sociais h2 {
+  margin-bottom: 0.5rem;
+}
+
+.grid_item {
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+
+}
+
+.sociais a img {
+  width: 3em;
+  fill: #FFFFFF;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.formulario h2 {
+  color: #FD7B01;
+  font-family: "Lato", Sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.formulario input {
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: #6533E2;
+  outline: none;
+  padding: 10px;
+
+}
+
+.formulario button {
+  background-color: #FD7B01;
+  color: #ffffff;
+  font-family: "Lato", Sans-serif;
+  width: 100%;
+}
+
+.formulario button:hover {
+  background-color: #FFFFFF;
+  color: #FD7B01;
+
+}
+
+.copy {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 15px;
 }
