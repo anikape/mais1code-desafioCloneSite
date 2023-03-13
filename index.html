@@ -13,20 +13,26 @@
 <body>
 
   <header>
-    <div class="header1">
-      <img class="logo" src="./assets/logo.png" alt="Logo Mais um Code">
 
-      <nav>
-        <ul>
-          <li class="link"><a id="first" href="#">Home</a></li>
-          <li class="link"><a href="#">Sobre Nós</a></li>
-          <li class="link"><a href="#">Faça Parte</a></li>
-          <li class="link"><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <input type="text" class="input1" placeholder="Pesquisar">
+    <img class="logo" src="./assets/logo.png" alt="Logo Mais um Code">
 
-    </div>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li class="link"><a id="first" href="#">Home</a></li>
+        <li class="link"><a href="#">Sobre Nós</a></li>
+        <li class="link"><a href="#">Faça Parte</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <input type="text" class="input1" placeholder="Pesquisar">
+
+    <!--Hamburguer-->
+
 
   </header>
 
@@ -179,9 +185,8 @@
 
 
   </footer>
-
-  <script src="script.js"></script>
-
 </body>
+
+<script src="script.js"></script>
 
 </html>

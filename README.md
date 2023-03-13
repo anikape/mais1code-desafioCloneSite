@@ -13,4 +13,7 @@ Confira o site original no link: <a href="https://mais1code.com.br/" target="_bl
 <a href="https://sprightly-valkyrie-8bce5a.netlify.app/" target="_blank">Clone do Site Mais1Code</a>
 
 Autora: @Anikape
+
+Acessibilidade:
+aria-expanded - Informa ao leiitor de tela que ali é um botão que expande. Inicia como false
  

@@ -16,17 +16,12 @@
 header {
   background-color: #6533E2;
   align-items: center;
-}
-
-.header1 {
   display: flex;
   justify-content: space-around;
   align-content: center;
   padding: 30px;
   color: black;
-
 }
-
 
 
 .logo {
@@ -43,17 +38,18 @@ header nav ul {
 .link {
   list-style-type: none;
   padding: 10px;
-  justify-content: space-between;
+  gap: .5rem;
 
 }
 
 header a {
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
   font-family: "Lato", Sans-serif;
   font-size: 19px;
   font-weight: 300;
-
+  padding: .5rem;
 }
 
 #first {
@@ -80,10 +76,19 @@ header nav ul li a:hover {
 
 }
 
+/*Hamburguer*/
+
+#btn-mobile {
+  display: none;
+}
+
 input::placeholder {
   font-size: 15px;
   padding-left: 50px;
 }
+
+/*Menu Hamburguer*/
+
 
 /*Main*/
 
@@ -244,12 +249,15 @@ button {
 
 /*Footer*/
 
+
+
 footer {
   background-color: #6533E2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 
 }
 
@@ -390,4 +398,135 @@ footer {
   color: #FFFFFF;
   margin-bottom: 10px;
   padding: 15px;
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+
+  #btn-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    right: 0;
+    height: 0px;
+    background: #6533E2;
+    z-index: 1000;
+    box-shadow: 10px #6533E2;
+    visibility: hidden;
+    transition: .6s;
+    /*Animação do height e bg*/
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    visibility: visible;
+    height: 40vh;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+
+  }
+
+  #first {
+    color: #FFFFFF;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburguer {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+    gap: .5rem;
+  }
+
+  /*Criando a linha superior e inferior do hamburguer*/
+  #hamburguer::after,
+  #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    /*Vai pegar a cor que tem dentro do pai, no caso no hamburguer*/
+    transition: .3s;
+    position: relative;
+  }
+
+  /*Fazendo o X qdo abre o hamburguer*/
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+
+  .input1 {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reprogramando {
+    order: -1;
+  }
+
+  .text {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .paragraph {
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 75%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
