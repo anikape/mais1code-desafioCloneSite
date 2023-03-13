@@ -12,6 +12,14 @@
 
 }
 
+html {
+  width: 100vw;
+}
+
+body {
+  width: 100%;
+}
+
 
 header {
   background-color: #6533E2;
@@ -100,12 +108,12 @@ input::placeholder {
   padding-top: 30px;
   height: 450px;
 
+
 }
 
 .text {
 
   padding-top: 50px;
-  padding-left: 20px;
   margin-bottom: 25px;
   justify-content: center;
   align-items: center;
@@ -130,7 +138,7 @@ input::placeholder {
 
 
 .reprogramando {
-  width: 392px;
+  width: 252px;
   height: 408px;
   padding-bottom: 2px;
 
@@ -157,31 +165,36 @@ input::placeholder {
 /*Cards*/
 .cards {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   display: flex;
   padding: 50px;
-
+  height: max-content;
+  margin-bottom: 190px;
+  width: 100vw;
 }
 
-.imagem {
+.img-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-btn img {
   display: flex;
   justify-content: center;
-}
-
-
-#card {
-  width: 67%;
-
+  width: 290px;
+  height: 250px;
 }
 
 .buttons {
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-  padding-left: 50px;
+  /*width: 90%;*/
+  /*padding-left: 50px;*/
+
 
 }
 
@@ -197,12 +210,18 @@ button {
   color: #FFFFFF;
   width: 150px;
   justify-content: center;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .button_one {
   margin-left: 100px;
 
+}
+
+.vidas_reprogramadas {
+  width: 100%;
 }
 
 .vidas_reprogramadas img {
@@ -257,7 +276,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+
 
 }
 
@@ -276,9 +296,10 @@ footer {
 .footer_one {
   display: flex;
   color: #FFFFFF;
-  margin: 4rem;
+  /*margin: 4rem;*/
   gap: 4rem;
   padding: 4rem;
+
 }
 
 
@@ -404,9 +425,7 @@ footer {
 /*Responsividade*/
 
 @media screen and (max-width: 700px) {
-  body {
-    width: 100%;
-  }
+
 
   #btn-mobile {
     display: block;
@@ -495,10 +514,6 @@ footer {
     display: none;
   }
 
-  header {
-    width: 100%;
-  }
-
   .banner {
     flex-direction: column;
     height: 100vh;
@@ -517,6 +532,7 @@ footer {
     padding: 10px 25px;
     width: 100%;
     flex-wrap: wrap;
+    margin-left: 2rem;
   }
 
   .paragraph {
@@ -525,8 +541,107 @@ footer {
     width: 75%;
   }
 
-  footer {
-    display: flex;
+  /*Entenda*/
+
+  .entenda {
+    width: 100%;
+  }
+
+  .entenda h2 {
+    font-size: 22px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .imagem {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .img-btn {
+    height: auto;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .cards {
     flex-direction: column;
   }
+
+  #card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .vidas_reprogramadas img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Patrocinadores*/
+
+  .patrocinadores {
+    width: 100%;
+  }
+
+  .patrocinadores h2 {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .patrocinadores ul li {
+
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .patrocinadores img {
+    width: 50px;
+  }
+
+  footer {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer_container img {
+    padding-left: 1rem;
+    width: 100px;
+    height: 50px;
+  }
+
+  .footer_one {
+
+    margin: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .contatos {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+
+  .institucional {
+    line-height: 1rem;
+    font-size: 10px;
+  }
+
+  .sociais {
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+
+  .sociais a img {
+    width: 2em;
+
+  }
+
 }
