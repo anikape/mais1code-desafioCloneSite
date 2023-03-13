@@ -192,6 +192,7 @@ button {
   color: #FFFFFF;
   width: 150px;
   justify-content: center;
+
 }
 
 .button_one {
@@ -236,6 +237,20 @@ button {
 
 .patrocinadores img {
   width: 100px;
+}
+
+/*Carroseul*/
+.slide {
+  display: flex;
+  width: 750px;
+  height: 500px;
+  overflow: hidden;
+  transition: all 0.4s;
+
+}
+
+.slides {
+  width: 800px;
 }
 
 /*Footer*/
@@ -301,7 +316,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.container {
+.container_one {
   display: flex;
   flex-direction: column;
 
@@ -333,7 +348,15 @@ footer {
 
 .sociais a img {
   width: 3em;
-  fill: #FFFFFF;
+
+}
+
+
+
+
+
+#svg:hover {
+  fill: #C36;
 }
 
 .formulario {
@@ -349,6 +372,8 @@ footer {
   font-family: "Lato", Sans-serif;
   font-size: 21px;
   font-weight: 800;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
 }
 
 .formulario input {
