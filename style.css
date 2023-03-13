@@ -240,18 +240,7 @@ button {
 }
 
 /*Carroseul*/
-.slide {
-  display: flex;
-  width: 750px;
-  height: 500px;
-  overflow: hidden;
-  transition: all 0.4s;
 
-}
-
-.slides {
-  width: 800px;
-}
 
 /*Footer*/
 
@@ -340,7 +329,7 @@ footer {
 }
 
 .grid_item {
-  padding: 5px;
+  padding: 2px;
   font-size: 10px;
   text-align: center;
 
@@ -352,9 +341,6 @@ footer {
 }
 
 
-
-
-
 #svg:hover {
   fill: #C36;
 }
@@ -364,7 +350,8 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .formulario h2 {
