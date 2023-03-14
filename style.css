@@ -168,10 +168,11 @@ input::placeholder {
   justify-content: center;
   display: flex;
   padding: 50px;
-  height: max-content;
+
   margin-bottom: 190px;
   width: 100vw;
 }
+
 
 .img-btn {
   width: 100%;
@@ -184,7 +185,7 @@ input::placeholder {
 .img-btn img {
   display: flex;
   justify-content: center;
-  width: 290px;
+  width: 250px;
   height: 250px;
 }
 
@@ -640,7 +641,7 @@ footer {
   }
 
   .sociais a img {
-    width: 2em;
+    width: 1.5em;
 
   }
 
